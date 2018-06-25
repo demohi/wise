@@ -2,9 +2,9 @@ import { Service } from 'wise';
 
 class User extends Service{
   async login(id){
-    const { fetch } = this;
+    const { app } = this;
     try{
-      const {value} = fetch(id);
+      const {value} = app.fetch(id);
       return value;
     }catch(err){
       throw err;
