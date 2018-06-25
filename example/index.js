@@ -19,10 +19,10 @@ class APP extends React.Component {
     );
   }
 }
-function mapWiseToProps(app=>{
+function mapAppToProps(app=>{
   return {
     user: app.model.user,
   }
 })
 
-export default connect(mapWiseToProps)(APP);
+export default connect(mapAppToProps)(APP);
